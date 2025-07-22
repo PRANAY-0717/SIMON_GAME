@@ -1,0 +1,72 @@
+html,body
+{
+    height:100%;
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+
+h1,h3
+{
+    text-align: center;
+}
+
+.outer
+{
+    margin: auto;
+    height:25rem;
+    width:25rem;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.inner
+{
+    height:40%;
+    width:40%;
+    border:0.5rem solid black;
+    border-radius: 2rem;
+}
+
+/* 1-pink 2-green 3-orange 4-blue*/
+
+.pink
+{
+    background-color: rgba(229, 98, 120, 0.845);
+}
+.green
+{
+    background-color:rgba(18, 108, 18, 0.8);
+}
+.orange
+{
+    background-color: rgba(255, 166, 0, 0.831);
+}
+.blue
+{
+    background-color: rgba(67, 67, 168, 0.779);
+}
+
+/* let make a animation which will be apllied on the boxes when they are clicked this we will add by the eventclass */
+
+.grows
+{
+    animation: grow 0.5s ease-in 0s 2 alternate;
+}
+
+@keyframes grow {
+    from{}
+    to{transform: scale(1.1);}
+}
+
+.red
+{
+    background-color: red;
+}
+
+h4
+{
+    position: relative;
+    top:10rem;
+}
